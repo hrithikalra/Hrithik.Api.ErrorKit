@@ -1,0 +1,47 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<!-- Package identity -->
+		<TargetFramework>net8.0</TargetFramework>
+		<AssemblyName>Hrithik.Api.ErrorKit</AssemblyName>
+		<RootNamespace>Hrithik.Api.ErrorKit</RootNamespace>
+
+		<!-- NuGet metadata -->
+		<PackageId>Hrithik.Api.ErrorKit</PackageId>
+		<Version>1.0.0</Version>
+		<Authors>Hrithik Kalra</Authors>
+		<Company>MainLibProj</Company>
+		<Description>
+			A lightweight, opinionated API error standardization library for ASP.NET Core.
+			Provides a single, frontend-friendly error contract for validation, domain, and system errors.
+		</Description>
+
+		<PackageTags>
+			aspnetcore,api,errors,error-handling,exception,middleware,api-errors,problem-details,validation,security
+		</PackageTags>
+		<RepositoryUrl>https://github.com/hrithikalra/Hrithik.Api.ErrorKit</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageProjectUrl>https://github.com/hrithikalra/Hrithik.Api.ErrorKit</PackageProjectUrl>
+		<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+
+		<!-- README -->
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+
+		<!-- Quality -->
+		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="LICENSE.txt" Pack="true" PackagePath="\" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="README.md" Pack="true" PackagePath="\" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.3.9" />
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="10.0.2" />
+	</ItemGroup>
+	
+</Project>
